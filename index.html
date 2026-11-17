@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>ÂNCORA</title>
+        <meta
+            name="description"
+            content="Preparação para emergências que considera cada pessoa, sua moradia e suas necessidades. Conheça o projeto ÂNCORA."
+        />
+        <meta name="theme-color" content="#10263b" />
 
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -12,8 +17,115 @@
         <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <main id="main-section">
-            <img src="assets/logo.svg" />
+        <a class="skip-link" href="#project">Pular para o conteúdo</a>
+
+        <header class="header wrap">
+            <a class="brand" href="./" aria-label="ÂNCORA - início">
+                <img src="assets/logo.svg" alt="" width="30" height="30" />
+                <span>ÂNCORA</span>
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <a href="#project">Projeto</a>
+                <a href="#us">Sobre nós</a>
+                <a href="#contact">Contato</a>
+            </nav>
+
+            <a class="button button-small" href="https://dashboard.alancora.org">
+                Acessar plataforma
+            </a>
+        </header>
+
+        <main>
+            <section class="project wrap" id="project" aria-labelledby="project-title">
+                <div class="hero">
+                    <div class="hero-copy">
+                        <p class="section-label">Projeto</p>
+
+                        <h1 id="project-title">A preparação começa com as pessoas.</h1>
+
+                        <p class="intro">
+                            O ÂNCORA te ajuda a montar um plano de preparação para emergências. Sua
+                            casa, suas necessidades, seus próximos passos. Tudo pensado para que
+                            você esteja preparado antes que a emergência aconteça.
+                        </p>
+                        <a class="button" href="https://dashboard.alancora.org">
+                            Acessar plataforma
+                        </a>
+                    </div>
+
+                    <div class="hero-mark" aria-hidden="true">
+                        <img src="assets/logo.svg" alt="" width="240" height="240" />
+                    </div>
+                </div>
+
+                <ol class="steps" aria-label="Como o ÂNCORA funciona">
+                    <li>
+                        <span class="step-number" aria-hidden="true">01</span>
+                        <div>
+                            <h2>Sua realidade</h2>
+                            <p>Cadastre seu perfil e suas necessidades de assistência.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number" aria-hidden="true">02</span>
+                        <div>
+                            <h2>Seu preparo</h2>
+                            <p>Escolha uma situação e veja orientações adequadas ao perfil.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number" aria-hidden="true">03</span>
+                        <div>
+                            <h2>Seu plano</h2>
+                            <p>Salve os planos e volte neles sempre que precisar.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="about" id="us" aria-labelledby="us-title">
+                <div class="about-content wrap">
+                    <div>
+                        <p class="section-label">Sobre nós</p>
+                        <h2 id="us-title">
+                            Um ponto de partida em comum para necessidades diferentes.
+                        </h2>
+                    </div>
+                    <div class="about-copy">
+                        <p>
+                            Desenvolvemos o ÂNCORA partindo de uma ideia simples: a mesma emergência
+                            pode afetar cada pessoa de um jeito. E o preparo precisa considerar
+                            essas diferenças.
+                        </p>
+                        <p class="project-note">
+                            Esta versão do projeto faz parte de uma iniciativa educativa com perfis
+                            fictícios. Ela apoia a preparação, mas não substitui orientações
+                            oficiais ou serviços de emergência.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+                <div>
+                    <p class="section-label">Contato</p>
+                    <h2 id="contact-title">Vamos conversar.</h2>
+                </div>
+                <div class="contact-copy">
+                    <p>Tem alguma dúvida, ideia ou sugestão sobre o ÂNCORA?</p>
+                    <a class="email" href="mailto:contato@alancora.org">contato@alancora.org</a>
+                </div>
+            </section>
         </main>
+
+        <footer class="footer wrap">
+            <a class="brand" href="./" aria-label="ÂNCORA - início">
+                <img src="assets/logo.svg" alt="" width="24" height="24" />
+                <span>ÂNCORA</span>
+            </a>
+            <p>Sua segurança começa antes da emergência.</p>
+            <a href="#project">Voltar ao início</a>
+        </footer>
     </body>
 </html>
