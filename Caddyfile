@@ -1,0 +1,14 @@
+{
+	admin off
+	persist_config off
+	auto_https off
+}
+
+:{$PORT:8080} {
+	root * .
+	encode zstd gzip
+	header Cache-Control "no-cache, max-age=0, must-revalidate"
+	file_server {
+		hide .git .env* Caddyfile railway.json
+	}
+}
