@@ -1,0 +1,27 @@
+:root {
+    --text-color: #e8f0f4;
+    --background-color: #10263b;
+    --primary: #f3b46a;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+main#main-section {
+    width: 100%;
+    min-height: 100dvh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+main#main-section > img {
+    aspect-ratio: 1;
+
+    width: 100px;
+    height: 100px;
+}
